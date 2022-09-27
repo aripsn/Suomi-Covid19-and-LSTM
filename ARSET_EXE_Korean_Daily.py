@@ -9,7 +9,6 @@ import pandas as pd
 
 #Input VNP46A2 - KR
 ####Change it to your input Data Folder###
-#os.chdir('D:/KEOL/Suomi/Data_BlackMarble_Korea/ALL2019-2021/')
 os.chdir('D:/KEOL/Suomi/Training/Data_Korea/')
 
 #Output - KR
@@ -139,11 +138,3 @@ for NOF in range(0, totalFiles):
     DNBvalue1.append((processHD5(rasterFiles[NOF],2,outputFolder, lat, lon, 1)))
     
 plotTimeSeries(JD, DNBvalue3, DNBvalue1)
-
-#Save to excel
-#a=np.array(DNBvalue1)
-#b=np.array(DNBvalue3)
-#np.savetxt('D:/KEOL/Suomi/GeoTIFF_BlackMarble_Korea/Daejeon.csv',DNBvalue3)
-#np.savetxt('D:/KEOL/Suomi/GeoTIFF_BlackMarble_Korea/Incheon8.csv',DNBvalue3)
-#np.savetxt('D:/KEOL/Suomi/GeoTIFF_BlackMarble_Korea/Itaewon8.5.csv',DNBvalue5)
-#np.savetxt('D:/KEOL/Suomi/GeoTIFF_BlackMarble_Korea/Gwangju.csv',DNBvalue3)
